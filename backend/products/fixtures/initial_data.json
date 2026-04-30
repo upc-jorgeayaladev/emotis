@@ -1,0 +1,198 @@
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "Tazas",
+      "slug": "tazas",
+      "description": "Tazas personalizadas para todo tipo de eventos",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "Polos",
+      "slug": "polos",
+      "description": "Polos y camisetas personalizadas",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "Piscos y Vinos",
+      "slug": "piscos-vinos",
+      "description": "Bebidas premium para regalos empresariales",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "Bodas",
+      "slug": "bodas",
+      "description": "Artículos personalizados para bodas",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "Cumpleaños",
+      "slug": "cumpleanos",
+      "description": "Regalos personalizados para cumpleaños",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+      "name": "Corporativo",
+      "slug": "corporativo",
+      "description": "Artículos promocionales para empresas",
+      "parent": null,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+      "name": "Taza Personalizada 11oz",
+      "slug": "taza-personalizada-11oz",
+      "description": "Taza de cerámica de 11oz personalizable con texto o imagen. Ideal para regalos corporativos y eventos especiales.",
+      "category": 1,
+      "base_price": "25.00",
+      "is_customizable": true,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z",
+      "updated_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+      "name": "Polo Evento Personalizado",
+      "slug": "polo-evento-personalizado",
+      "description": "Polo de algodón premium personalizable con logo o texto. Disponible en varias tallas y colores.",
+      "category": 2,
+      "base_price": "45.00",
+      "is_customizable": true,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z",
+      "updated_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+      "name": "Pisco 750ml Premium",
+      "slug": "pisco-750ml-premium",
+      "description": "Pisco premium de 750ml, ideal para regalos corporativos. Se puede personalizar la etiqueta.",
+      "category": 3,
+      "base_price": "80.00",
+      "is_customizable": true,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z",
+      "updated_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "sku": "TAZA-11OZ-BLA",
+      "attributes": {"color": "Blanco"},
+      "price": "25.00",
+      "stock_quantity": 100,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 2,
+    "fields": {
+      "product": 2,
+      "sku": "POLO-M-BLA",
+      "attributes": {"talla": "M", "color": "Blanco"},
+      "price": "45.00",
+      "stock_quantity": 50,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 3,
+    "fields": {
+      "product": 2,
+      "sku": "POLO-L-NEG",
+      "attributes": {"talla": "L", "color": "Negro"},
+      "price": "45.00",
+      "stock_quantity": 50,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.productvariant",
+    "pk": 4,
+    "fields": {
+      "product": 3,
+      "sku": "PISCO-750-PREM",
+      "attributes": {"capacidad": "750ml"},
+      "price": "80.00",
+      "stock_quantity": 30,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.customizationoption",
+    "pk": 1,
+    "fields": {
+      "product": 1,
+      "name": "Texto en taza",
+      "option_type": "text",
+      "is_required": false,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.customizationoption",
+    "pk": 2,
+    "fields": {
+      "product": 1,
+      "name": "Logo/Imagen",
+      "option_type": "image",
+      "is_required": false,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "products.customizationoption",
+    "pk": 3,
+    "fields": {
+      "product": 2,
+      "name": "Logo empresa",
+      "option_type": "file",
+      "is_required": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  }
+]

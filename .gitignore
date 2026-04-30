@@ -1,0 +1,32 @@
+# --- Generales ---
+.DS_Store
+.env
+.env.local
+*.log
+
+# Archivos de compilación de Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+
+# --- Backend (Django) ---
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/db.sqlite3
+backend/staticfiles/
+backend/media/
+
+# --- Frontend (Next.js / Node) ---
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.vercel/
+frontend/*.tsbuildinfo
+
+# --- Base de Datos & Herramientas ---
+*.swp
+*.bak
+.vscode/
+.idea/

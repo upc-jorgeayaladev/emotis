@@ -1,0 +1,42 @@
+[
+  {
+    "model": "coupons.coupon",
+    "pk": 1,
+    "fields": {
+      "code": "BIENVENIDO10",
+      "discount_type": "percentage",
+      "discount_value": "10.00",
+      "min_purchase": "50.00",
+      "max_discount": "20.00",
+      "valid_from": "2026-04-29T00:00:00Z",
+      "valid_to": "2026-12-31T23:59:59Z",
+      "usage_limit": 100,
+      "used_count": 0,
+      "applies_to": "all",
+      "category": null,
+      "product": null,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  },
+  {
+    "model": "coupons.coupon",
+    "pk": 2,
+    "fields": {
+      "code": "EMOTIS5",
+      "discount_type": "fixed",
+      "discount_value": "5.00",
+      "min_purchase": "30.00",
+      "max_discount": null,
+      "valid_from": "2026-04-29T00:00:00Z",
+      "valid_to": "2026-06-30T23:59:59Z",
+      "usage_limit": null,
+      "used_count": 0,
+      "applies_to": "all",
+      "category": null,
+      "product": null,
+      "is_active": true,
+      "created_at": "2026-04-29T00:00:00Z"
+    }
+  }
+]
