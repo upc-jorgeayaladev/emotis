@@ -1,6 +1,5 @@
 # --- Generales ---
 .DS_Store
-.env
 .env.local
 *.log
 
