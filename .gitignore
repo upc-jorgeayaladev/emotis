@@ -1,4 +1,81 @@
+.mimocode
+
+# ==============================================================================
+# 1. DEPENDENCIAS (Usa el gestor de paquetes del monorepo en la raíz)
+# ==============================================================================
 node_modules/
-.env
+/node_modules/
+*/node_modules/
+packages/*/node_modules/
+apps/*/node_modules/
+
+# Archivos de logs de error de los gestores
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================================================================
+# 2. DIRECTORIOS DE COMPILACIÓN / BUILD (Especifica según tus frameworks)
+# ==============================================================================
+# General de JS/TS
 dist/
+build/
+out/
+.next/
+.nuxt/
+.remix/
+.svelte-kit/
+.expo/
+
+# Ignorar carpetas de build dentro de los paquetes/apps de forma genérica
+packages/**/dist/
+packages/**/build/
+apps/**/dist/
+apps/**/build/
+
+# ==============================================================================
+# 3. SECRETOS Y VARIABLES DE ENTORNO (¡CRÍTICO!)
+# ==============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+# Asegurar que no se suban en ningún subdirectorio
+**/.env*
+
+# Claves de Firebase, Supabase, etc.
+.runtimeconfig.json
+
+# ==============================================================================
+# 4. HERRAMIENTAS DE MONOREPO (Turborepo, Nx, Lerna)
+# ==============================================================================
+.turbo/
+.nx/
+.lerna/
+
+# Cache de herramientas de testing y formateo
+.eslintcache
+.stylelintcache
+.prettiercache
+.jest/
+.vitest/
+.coverage/
+coverage/
+
+# ==============================================================================
+# 5. ARCHIVOS DE SISTEMA / IDEs
+# ==============================================================================
 .DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
